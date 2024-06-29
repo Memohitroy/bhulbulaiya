@@ -1,0 +1,122 @@
+
+@font-face
+{													/* On récupère une police de caractère via un fichier.ttf*/
+	font-family: "Oswald";
+	src: url("Oswald-Bold.ttf") format("truetype");
+}
+
+
+#haut
+{
+	position:absolute;			/* Positionnement des quatres boutons qui actionnent les fonctions de mouvement (haut,bas,droite,gauche)*/
+	bottom:280px;
+	right:140px;
+}
+
+
+#droite
+{
+	position:absolute;
+	bottom:200px;
+	right:5px;
+}
+
+
+#gauche
+{
+	position:absolute;
+	bottom:200px;
+	right:220px;
+}
+
+
+#bas
+{
+	position:absolute;
+	bottom:70px;
+	right:140px;
+	;
+}
+
+
+#bas,#gauche,#droite,#haut      
+{                                 /* Marge par rapport au bas de la page nul des quatres boutons qui actionnent 
+									les fonctions de mouvement (haut,bas,droite,gauche)*/
+	margin-bottom:0px;
+}
+
+
+body
+{
+	background-image:url("img-de-fond.png");  /* On applique un fond d'écran à la page.*/
+	background-repeat:no-repeat;
+}
+
+
+table
+{
+	background-image:url("imagedefondlabi.png");   /* On applique un fond d'écran à la page puis on règle la position du labyrinte dans la page	.*/
+	background-repeat:no-repeat;
+	position:absolute;
+	top:110px;
+	left:10px;
+}
+
+
+#imagebouton				 /*  On règle la position de l'image de Super Meat boy dans la page.*/
+{							
+	position:absolute;
+	bottom:215px;
+	right:152.5px;
+}
+
+
+#changecouleurmur,#changeBanane,#ConnaitreDimension,#ParDefautLabi,#ChangeCouleurBordure,#ChangeTailleBordureA,#ChangeTailleBordureD
+{
+	font-family:Oswald;					 /* On applique une bordure et un style à tous les boutons qui gère la forme et le fond du labyrinthe	.*/
+	border:3px solid white;
+	font-size:10.33px;
+	font-weight:bold;
+}
+
+
+#bouton
+{
+	position:absolute;	     /* On règle la positon de tous les boutons qui actionnent les fonctions de mouvement	.*/
+	top:85px;
+	left:10px;
+}
+
+
+h1
+{
+	font-family:Oswald;	     /* On applique un style au titre principale de la page et on le centre par rapport au labyrinthe.*/
+	position:absolute;
+	left:310px;
+	color:white;
+	border:3px solid grey;
+}
+
+
+#dimension
+{							 /* On applique un style et on règle la position de messageDimension en javascript.*/
+	position:absolute;
+	right:20px;
+	top:150px;
+	font-family:Oswald;
+	font-size:15px;
+	font-weight:bold;
+	color:black;
+}
+
+
+#messageFinjeu				
+{
+	position:absolute;		/* On applique un style et on règle la position du messageFinJeu en javascript.*/
+	right:100px;
+	top:190px;
+	font-family:Oswald;
+	font-weight:bold;
+	font-size:17px;
+	color:black;
+}
